@@ -1,0 +1,7 @@
+{
+    "extract_table": "extract_data",
+    "load_table": "load_data",
+    "pg_host": "jdbc:postgresql://host.docker.internal:5434/airflow",
+    "pg_password": "airflow",
+    "pg_user": "airflow"
+}

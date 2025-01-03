@@ -11,11 +11,11 @@ print('=================================== LOADING VARIABLES ===================
 
 pg_extract_host = Variable.get("pg_host")
 pg_extract_user = Variable.get("pg_user")
-pg_extract_pwd = Variable.get("password_pg_extract_pwd")
+pg_extract_pwd = Variable.get("pg_password")
 pg_extract_table = Variable.get("extract_table")
 pg_load_host = Variable.get("pg_host")
 pg_load_user = Variable.get("pg_user")
-pg_load_pwd = Variable.get("password_pg_extract_pwd")
+pg_load_pwd = Variable.get("pg_password")
 pg_load_table = Variable.get("load_table")
 
 spark = SparkSession.builder \
