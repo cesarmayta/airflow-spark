@@ -27,6 +27,15 @@ spark = SparkSession.builder \
 
 print('=================================== EXTRACT DATA ================================================')
 try:
+    
+    df_test = spark.createDataFrame([
+    ("Alice", 30),
+        ("Bob", 25),
+        ("Carol", 27)
+    ], ["name", "age"])
+
+    print(df_test.show())
+    
     df = spark.read \
         .format("jdbc") \
         .option("url", pg_extract_host) \
